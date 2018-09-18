@@ -1,0 +1,20 @@
+.fx-style Label{
+	-fx-font: 16px "System" ;
+	-fx-text-fill: #ede8e8;
+	-fx-font-weight: 800;
+}
+
+.panal{
+	
+}
+
+
+#heder{
+	-fx-font: 12px "System" ;
+	-fx-text-fill: #ede8e8;
+	-fx-font-weight: 800;
+}
+
+#btnSave{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

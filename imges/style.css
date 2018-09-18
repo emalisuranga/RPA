@@ -1,0 +1,16 @@
+.fx-style Label{
+	-fx-font: 16px "System" ;
+	-fx-text-fill: #ede8e8;
+	-fx-font-weight: 800;
+}
+
+.panal{
+	
+}
+
+
+#heder{
+	-fx-font: 12px "System" ;
+	-fx-text-fill: #ede8e8;
+	-fx-font-weight: 800;
+}

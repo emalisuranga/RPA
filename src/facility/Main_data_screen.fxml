@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="386.0" prefWidth="1083.0" styleClass="fx-style" stylesheets="@../rpa/imges/style.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="facility.Main_data_screenController">
+   <children>
+      <ImageView fx:id="mm" fitHeight="630.0" fitWidth="1080.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../rpa/imges/Cool%20Sky.jpg" />
+         </image>
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis></ImageView>
+      <Label layoutX="33.0" layoutY="23.0" styleClass="fx-style" text="Security Point" textFill="#eee8e8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="26.0" layoutY="120.0" text="Time Stamp" />
+      <Label layoutX="680.0" layoutY="24.0" text="Report By" textFill="#eee8e8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="27.0" layoutY="74.0" styleClass="fx-style" text="Person Duty 1" textFill="#ede8e8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="386.0" layoutY="72.0" text="Person Duty 2" />
+      <Label layoutX="746.0" layoutY="72.0" text="Person Duty 3" textFill="#00000033" />
+      <Label layoutX="26.0" layoutY="200.0" text="Tail Gate" />
+      <Label layoutX="240.0" layoutY="200.0" text="Service Provider" />
+      <Label layoutX="240.0" layoutY="165.0" text="Visitors" />
+      <Label layoutX="26.0" layoutY="164.0" text="FID" />
+      <Label layoutX="25.0" layoutY="243.0" text="Photo/Video" />
+      <Label layoutX="241.0" layoutY="242.0" text="Work Permits" />
+      <Label layoutX="28.0" layoutY="286.0" text="Laynyard" />
+      <Label layoutX="240.0" layoutY="286.0" text="Restricted Item" />
+      <Label layoutX="29.0" layoutY="328.0" text="Lost Found" />
+      <Label id="txtKeysReturned" layoutX="28.0" layoutY="413.0" text="Keys Returned" />
+      <Label layoutX="240.0" layoutY="370.0" text="Asset Movemer" />
+      <Label layoutX="245.0" layoutY="414.0" text="Other" />
+      <Label layoutX="29.0" layoutY="371.0" text="Keys Isuued" />
+      <Label layoutX="30.0" layoutY="456.0" text="Special Events" />
+      <Label layoutX="239.0" layoutY="328.0" text="Unestricted Visi" />
+      <Label layoutX="35.0" layoutY="506.0" prefHeight="32.0" prefWidth="149.0" text="Name,Time,Reason" AnchorPane.bottomAnchor="69.0" />
+      <Label layoutX="36.0" layoutY="558.0" text="to Leave Point" />
+      <TextField id="txtPoint" fx:id="txtPoint" alignment="CENTER" layoutX="159.0" layoutY="24.0" onAction="#dataValidation" />
+      <TextField id="txtDuty1" fx:id="txtDuty1" alignment="CENTER" layoutX="158.0" layoutY="71.0" prefHeight="25.0" prefWidth="188.0" />
+      <TextField id="txtTime" fx:id="txtTime" alignment="CENTER" layoutX="159.0" layoutY="119.0" />
+      <TextField id="txtLostFound" fx:id="txtLostFound" alignment="CENTER" layoutX="158.0" layoutY="327.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+      <TextField id="txtKeysIsuued" fx:id="txtKeysIsuued" alignment="CENTER" layoutX="160.0" layoutY="372.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+      <TextField id="txtLeave" fx:id="txtLeave" layoutX="201.0" layoutY="503.0" prefHeight="90.0" prefWidth="260.0" />
+      <TextField fx:id="txtKeysReturned" alignment="CENTER" layoutX="159.0" layoutY="415.0" prefWidth="57.0" text="0" />
+      <TextField id="txtSpecialEvents" fx:id="txtSpecialEvents" alignment="CENTER" layoutX="160.0" layoutY="457.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+      <TextField id="txtDuty2" fx:id="txtDuty2" alignment="CENTER" layoutX="508.0" layoutY="71.0" prefHeight="25.0" prefWidth="188.0" />
+      <TextField id="txtDuty3" fx:id="txtDuty3" alignment="CENTER" layoutX="868.0" layoutY="71.0" prefHeight="25.0" prefWidth="188.0" stylesheets="@../../imges/style.css">
+         <font>
+            <Font size="10.0" />
+         </font></TextField>
+      <TextField id="txtTail" fx:id="txtTail" alignment="CENTER" layoutX="160.0" layoutY="204.0" prefHeight="25.0" prefWidth="57.0" />
+      <TextField id="txtLaynyard" fx:id="txtLaynyard" alignment="CENTER" layoutX="158.0" layoutY="287.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+      <TextField id="txtPhoto" fx:id="txtPhoto" alignment="CENTER" layoutX="159.0" layoutY="244.0" prefHeight="25.0" prefWidth="57.0" />
+      <TextField id="txtFid" fx:id="txtFid" alignment="CENTER" layoutX="159.0" layoutY="165.0" prefHeight="25.0" prefWidth="57.0" />
+      <TextField id="txtVisitors" fx:id="txtVisitors" alignment="CENTER" layoutX="386.0" layoutY="164.0" prefHeight="25.0" prefWidth="57.0" />
+      <TextField id="txtServiceProvider" fx:id="txtServiceProvider" alignment="CENTER" layoutX="387.0" layoutY="201.0" prefHeight="25.0" prefWidth="57.0" />
+      
+      <TextField id="txtRestrictedItem" fx:id="txtRestrictedItem" alignment="CENTER" layoutX="389.0" layoutY="286.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+      <TextField id="txtUnestrictedVisi" fx:id="txtVisi" alignment="CENTER" layoutX="389.0" layoutY="327.0" onAction="#txtUnestrictedVisi" prefHeight="25.0" prefWidth="57.0" text="0" />
+      <TextField id="txtOther" fx:id="txtOther" alignment="CENTER" layoutX="391.0" layoutY="414.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+      <TextField id="txtAssetMovemer" fx:id="txtAssetMovemer" alignment="CENTER" layoutX="390.0" layoutY="371.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+      <Pane layoutX="477.0" layoutY="120.0" prefHeight="238.0" prefWidth="188.0" style="-fx-background-color: #00000032;">
+         <children>
+            <Label id="heder" layoutX="23.0" layoutY="11.0" styleClass="panal" text="EHS complaints/incidents">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="txtNearMiss" layoutX="13.0" layoutY="45.0" text="Near Miss" />
+            <Label layoutX="15.0" layoutY="81.0" text="Accidents" />
+            <Label layoutX="18.0" layoutY="121.0" text="Medical" />
+            <Label layoutX="17.0" layoutY="159.0" text="Doctor Visits" />
+            <Label layoutX="18.0" layoutY="198.0" text="Ambulance" />
+            <TextField fx:id="txtNearMiss" alignment="CENTER" layoutX="120.0" layoutY="47.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+            <TextField id="txtAccidents" fx:id="txtAccidents" alignment="CENTER" layoutX="121.0" layoutY="83.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+            <TextField id="txtMedical" fx:id="txtMedical" alignment="CENTER" layoutX="121.0" layoutY="120.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+            <TextField id="txtDoctorVisits" fx:id="txtDoctorVisits" alignment="CENTER" layoutX="121.0" layoutY="158.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+            <TextField id="txtAmbulance" fx:id="txtAmbulance" alignment="CENTER" layoutX="122.0" layoutY="198.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+         </children>
+      </Pane>
+      <Pane layoutX="884.0" layoutY="120.0" prefHeight="244.0" prefWidth="188.0" style="-fx-background-color: #00000032;">
+         <children>
+            <Label id="heder" layoutX="55.0" layoutY="9.0" styleClass="panal" text="Environmental">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="48.0" text="Fire Alarm" />
+            <Label layoutX="14.0" layoutY="79.0" text="Equipment" />
+            <Label layoutX="16.0" layoutY="124.0" text="Light/ac fails" />
+            <Label layoutX="15.0" layoutY="97.0" text="Failure" />
+            <TextField id="txtFireAlarm" fx:id="txtFireAlarm" alignment="CENTER" layoutX="124.0" layoutY="51.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+            <TextField id="txtEquipment" fx:id="txtEquipment" alignment="CENTER" layoutX="124.0" layoutY="86.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+            <TextField id="txtLight" fx:id="txtLight" alignment="CENTER" layoutX="124.0" layoutY="125.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+         </children>
+      </Pane>
+      <Pane layoutX="682.0" layoutY="119.0" prefHeight="244.0" prefWidth="188.0" style="-fx-background-color: #00000032;">
+         <children>
+            <Label id="heder" layoutX="40.0" layoutY="11.0" styleClass="panal" text="Materials Letter">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="46.0" text="Out" />
+            <Label layoutX="19.0" layoutY="121.0" text="Letters" />
+            <Label layoutX="19.0" layoutY="161.0" text="Courier" />
+            <Label layoutX="22.0" layoutY="199.0" text="Garbage" />
+            <TextField fx:id="txtOut" alignment="CENTER" layoutX="105.0" layoutY="49.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+            <TextField id="txtIn" fx:id="txtIn" alignment="CENTER" layoutX="105.0" layoutY="85.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+            <TextField id="txtCourier" fx:id="txtCourier" alignment="CENTER" layoutX="105.0" layoutY="161.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+            <TextField fx:id="txtLetters" alignment="CENTER" layoutX="105.0" layoutY="122.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+            <TextField id="txtGarbage" fx:id="txtGarbage" alignment="CENTER" layoutX="106.0" layoutY="200.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+            <Label layoutX="22.0" layoutY="85.0" text="In" />
+         </children>
+      </Pane>
+      <Label layoutX="492.0" layoutY="450.0" text="Suttle/" />
+      <Label layoutX="492.0" layoutY="416.0" text="Perimeter" />
+      <Label layoutX="492.0" layoutY="372.0" text="Patrol Visit" />
+      <Label layoutX="491.0" layoutY="468.0" text="Trannsport" />
+      <TextField fx:id="txtPatrolVisit" alignment="CENTER" layoutX="599.0" layoutY="372.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+      <TextField fx:id="txtPerimeter" alignment="CENTER" layoutX="599.0" layoutY="419.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+      <TextField fx:id="txtSuttle" alignment="CENTER" layoutX="601.0" layoutY="463.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+      <TextField id="txtReport" fx:id="txtReport" alignment="CENTER" layoutX="778.0" layoutY="24.0" />
+      <ImageView fitHeight="86.0" fitWidth="149.0" layoutX="930.0" layoutY="555.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imges/accellosl.png" />
+         </image>
+      </ImageView>
+      <Button id="btnSave" fx:id="btnSave" layoutX="723.0" layoutY="420.0" mnemonicParsing="false" onAction="#dataValidation" prefHeight="50.0" prefWidth="107.0" style="-fx-background-color: #c6c611;" textFill="#c6c611e3" />
+      <ImageView fitHeight="17.0" fitWidth="136.0" layoutX="770.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../rpa/imges/save%20(2).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="760.0" layoutY="445.0" text="SAVE" />
+      <Button fx:id="btnExit" layoutX="923.0" layoutY="420.0" mnemonicParsing="false" onAction="#closeWindow" onMouseClicked="#closeWindow" prefHeight="50.0" prefWidth="107.0" style="-fx-background-color: #c6c611;" textFill="#171714" />
+      <Label layoutX="954.0" layoutY="445.0" text="CLOSE" />
+      <ImageView fitHeight="43.0" fitWidth="17.0" layoutX="968.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../rpa/imges/logout.png" />
+         </image>
+      </ImageView>
+      <TextField id="txtServiceProvider" fx:id="txtWorkPermits" alignment="CENTER" layoutX="387.0" layoutY="242.0" prefHeight="25.0" prefWidth="57.0" />
+     
+   </children>
+</AnchorPane>
